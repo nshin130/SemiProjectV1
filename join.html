@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <title>세미프로젝트v1-join</title>
         <link rel ="stylesheet" href="/CSS/base.css">
+        <style>
+            #joinfrm {width: 300px; margin: 70px auto; }
+            #joinfrm div{ margin-bottom: 10px; }
+            #joinfrm label{ display: inline-block; width: 115px; text-align: right; font-weight: bold}
+            input, button { padding: 5px}
+            input{ width: 135px }
+
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -23,24 +31,25 @@
         <div id="container">
         <!-- 메인영역 -->
             <h2>회원가입</h2>
-            <form name="joinfrm" method="post">
+            <form name="joinfrm" id="joinfrm" method="post">
            <div><label for="userid">아이디</label>
                <input type="text" name="userid" id="userid"></div>
+
            <div><label for ="passwd">비밀번호</label>
-               <input type="password" name="passwd" id="passwd">
-           </div>
+               <input type="password" name="passwd" id="passwd"></div>
+
            <div><label for ="ckpwd">비밀번호확인</label>
-               <input type="password" name="ckpwd" id="ckpwd">
-           </div>
+               <input type="password" name="ckpwd" id="ckpwd"></div>
+
            <div><label for ="name">이 름</label>
-               <input type="text" name="name" id="name">
-           </div>
+               <input type="text" name="name" id="name"></div>
+
            <div><label for ="email">이메일</label>
-               <input type="text" name="email" id="email">
-           </div>
-           <div><button type="button">입력완료</button>
-                    <button type="reset">다시입력</button>
-           </div>
+               <input type="text" name="email" id="email"></div>
+
+           <div><label></label>
+                    <button type="button">입력완료</button>
+                    <button type="reset">다시입력</button></div>
 
             </form>
         </div>
