@@ -3,17 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>세미프로젝트v1-index</title>
+        <style>
+            /*전체 영역에 적용하는 스타일시트*/
+            /*body {margin: 0}*/
+            #wrap {width: 960px; margin: 0 auto;  /*border: 1px solid red;*/ }
+
+            /*링크에 적용하는 스타일시트*/
+            a { font-weight: bold }
+            a:link{ text-decoration: none; color: black} /*링크밑줄지우기*/
+            a:visited{ text-decoration: none; color: black} /*방문했을때*/
+            a:active{ text-decoration: underline; color: orange}
+            a:hover{ text-decoration: underline; color: orange}
+
+            /*header 영역에 적용하는 스타일시트*/
+
+            /*nav영역에 적용하는 스타일시트*/
+            nav ul { list-style-type: none; padding-bottom: 15px;}
+            nav ul li { float: left; margin-left: 100px;}
+            nav hr { clear: both;}
+
+
+            /*main 영역에 적용하는 스타일시트*/
+            #container { min-height: 500px; }
+
+
+            /*footer 영역에 적용하는 스타일시트*/
+            footer p {text-align: center }
+
+        </style>
     <body>
+        <div id="wrap">
         <header>
             <h1>SemiProject V1</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="join.html">회원가입</a></li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="Board/list.html">게시판</a></li>
-                <li><a href="myinfo.html">회원정보</a></li>
+                <li><a href="/join.html">회원가입</a></li>
+                <li><a href="/login.html">로그인</a></li>
+                <li><a href="/Board/list.html">게시판</a></li>
+                <li><a href="/myinfo.html">회원정보</a></li>
             </ul>
             <hr>
         </nav>
@@ -23,7 +52,7 @@
             <hr>
             <p>Copyright &copy; 2021. nshin130. All rights reserved.</p>
         </footer>
-
+        </div>
     </body>
     </head>
 </html>
